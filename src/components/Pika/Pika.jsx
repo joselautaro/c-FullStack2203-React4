@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react'
-import './pika.css'
+import './pika.scss'
 
 const Pika = () => {
 
@@ -64,19 +64,22 @@ const Pika = () => {
                     <>
                         <h3>{pokemon.numero}</h3>
                         <h3>{pokemon.nombre}</h3>
+                        <div className="div-img">
                         <img className="img" src={pokemon.img} alt={pokemon.nombre} />
+                        </div>
                     </>
             }
-            <div>
+            <div className="button-container">
                 <button className="btn btn-primary" onClick={handleAnterior}> Anterior </button>
                 <button className="btn btn-success" onClick={handleSiguiente}> Siguiente </button>
             </div>
             <div>
-                <form onSubmit={handleSubmit}>
+                <form className="form" onSubmit={handleSubmit}>
                     <input
                         className="form-control"
                         type="text"
                         value={busqueda}
+                        autoFocus
                         onChange={handleInputChange}
                     />
                 </form>

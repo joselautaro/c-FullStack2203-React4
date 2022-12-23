@@ -1,0 +1,28 @@
+h2{
+    text-align: center;
+}
+h3{
+    text-align: center;
+}
+.div-img{
+    display: flex;
+    justify-content: center;
+}
+
+.button-container{
+    display: flex;
+    justify-content: space-around;
+    button{
+        margin: 15px;
+    }
+}
+form{
+    width: 100%;
+    input[type=text]{
+        width: 50%;
+        margin: 0 auto;
+    }
+    
+}
+
+

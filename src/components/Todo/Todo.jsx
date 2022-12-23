@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import './todo.scss'
 
 const Todo = () => {
   const [todos, setTodos] = useState([]);
@@ -23,10 +24,10 @@ const Todo = () => {
   };
 
   return (
-    <div>
+    <div className="div-container">
       <h2>Nuestra tareas</h2>
       <h3>Ingrese tareas aquí 👇</h3>
-      <fieldset>
+      
         <form onSubmit={handleSubmit}>
           <input
             type="text"
@@ -35,7 +36,6 @@ const Todo = () => {
           ></input>
           <button type="submit">➕</button>
         </form>
-      </fieldset>
 
       {todos.map((todo) => (
         <div>
